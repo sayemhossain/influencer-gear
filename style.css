@@ -298,6 +298,10 @@ footer {
   .market-place {
     margin-top: 40px;
   }
+  .market img {
+    width: 60.06px;
+    height: 20px;
+  }
   #popular-collection {
     width: 100%;
   }
@@ -355,5 +359,25 @@ footer {
 @media only screen and (min-width: 688px) and (max-width: 992px) {
   .container {
     width: 100%;
+  }
+  .banner,
+  .banner-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner-left {
+    text-align: center;
+  }
+  .banner-left h1 {
+    font-size: 28px;
+    line-height: 42px;
+    margin-top: 2rem;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
   }
 }
