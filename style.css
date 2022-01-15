@@ -106,6 +106,12 @@ body {
 }
 .banner-right img {
   margin-top: 80px;
+  transition: transform 3s ease;
+  cursor: grab;
+  border-radius: 50%;
+}
+.banner-right img:hover {
+  transform: rotate(360deg);
 }
 
 /* market part start */
