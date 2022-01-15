@@ -54,6 +54,10 @@ body {
 .navigation li a:hover {
   color: #e02c6d;
 }
+.nav-items p .fa-shopping-cart {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
 /* banner section start */
 .banner {
   display: flex;
@@ -283,13 +287,13 @@ footer {
   }
   .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   .logo h2 {
     font-size: 16px;
     line-height: 24px;
   }
-  .nav-items {
+  .navigation {
     display: none;
   }
   header {
@@ -357,8 +361,11 @@ footer {
 }
 /* tablet */
 @media only screen and (min-width: 688px) and (max-width: 992px) {
+  .navigation {
+    display: none;
+  }
   .container {
-    width: 100%;
+    width: 80%;
   }
   .banner,
   .banner-left {
@@ -366,6 +373,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 2rem;
   }
 
   .banner-left {
@@ -378,6 +386,17 @@ footer {
   }
   .cards {
     grid-template-columns: repeat(2, 1fr);
+    padding-right: 3rem;
+  }
+
+  .see-more {
+    justify-content: flex-start;
+  }
+  .contact {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-left {
+    display: flex;
     justify-content: center;
   }
 }
