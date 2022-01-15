@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .logo h2 {
   font-size: 24px;
@@ -129,7 +129,7 @@ body {
   font-size: 28px;
   line-height: 70px;
   color: #3a3a3a;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -146,8 +146,7 @@ body {
   border-radius: 5px;
 }
 .card img {
-  width: 300px;
-  height: 256px;
+  width: 100%;
 }
 .card h1 {
   font-weight: 500;
@@ -195,4 +194,95 @@ body {
   text-decoration: none;
   color: #e02c6d;
   font-size: 16px;
+}
+
+/* footer section start */
+footer {
+  text-align: center;
+  background: #0a0826;
+}
+.footer-items {
+  padding: 50px 0;
+  color: white;
+}
+.footer-items h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+}
+.footer-items p {
+  font-family: Manrope;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #d9dbe1;
+  margin-bottom: 17px;
+}
+
+.social-links .fab {
+  font-size: 20px;
+  margin: 0 15px;
+}
+
+/* Media queries */
+
+/* mobile */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-items {
+    display: none;
+  }
+  header {
+    width: 100%;
+  }
+  .market-place {
+    margin-top: 40px;
+  }
+  #popular-collection {
+    width: 100%;
+  }
+  .banner,
+  .banner-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-left {
+    text-align: center;
+  }
+  .banner-left h1 {
+    font-size: 28px;
+    line-height: 42px;
+    margin-top: 2rem;
+  }
+  .banner-right img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+  }
+  .see-more {
+    margin-right: 0.5rem;
+  }
+  footer {
+    width: 100%;
+  }
+}
+/* tablet */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
 }
