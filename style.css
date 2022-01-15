@@ -298,6 +298,9 @@ footer {
   .navigation {
     display: none;
   }
+  .banner-left p {
+    margin-right: 0;
+  }
   header {
     width: 100%;
   }
